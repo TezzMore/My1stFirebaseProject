@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 
-const serviceAccount = require(`/Users/apple/Downloads/project-1-b-6df95-firebase-adminsdk-iz0o9-cb9a1debb3.json`);
+const serviceAccount = require("/path/to/serviceAccountKey.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
